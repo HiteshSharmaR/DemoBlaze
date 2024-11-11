@@ -13,4 +13,9 @@ public class HomePage {
     public static By textFieldMonth = By.xpath("//input[@id='month']");
     public static By textFieldYear = By.xpath("//input[@id='year']");
     public static By purchaseButton = By.xpath("//button[contains(text(),'Purchase')]");
+    public static By selectCategory = By.xpath("//div[@class='list-group']//a[contains(text(),'Laptops')]");
+//    public static By laptopName = By.xpath("//div[@class='card h-100']//a[contains(text(),'Sony vaio i5')]");
+
+    static String laptopNames = "Sony vaio i5";
+    public static By laptopName = By.xpath("//div[@class='card h-100']//a[contains(text(),'"+ laptopNames+"')]");
 }
